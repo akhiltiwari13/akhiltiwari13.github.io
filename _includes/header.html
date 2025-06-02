@@ -1,0 +1,20 @@
+<header class="site-header">
+    <div class="container">
+        <nav class="site-nav">
+            <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+
+            <div class="nav-links">
+                <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+                <a href="{{ '/about' | relative_url }}" class="nav-link">About</a>
+                <a href="{{ '/projects' | relative_url }}" class="nav-link">Projects</a>
+                <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
+                <a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a>
+
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>

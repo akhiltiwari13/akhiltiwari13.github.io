@@ -1,0 +1,174 @@
+/* _sass/_variables.scss */
+
+/* Catppuccin Theme Variables */
+:root {
+  /* Base Theme Settings */
+  --font-mono: "JetBrains Mono", "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --border-radius: 6px;
+  --transition-speed: 0.3s;
+
+  /* Catppuccin Mocha Theme (Default/Dark) */
+  --mocha-rosewater: #f5e0dc;
+  --mocha-flamingo: #f2cdcd;
+  --mocha-pink: #f5c2e7;
+  --mocha-mauve: #cba6f7;
+  --mocha-red: #f38ba8;
+  --mocha-maroon: #eba0ac;
+  --mocha-peach: #fab387;
+  --mocha-yellow: #f9e2af;
+  --mocha-green: #a6e3a1;
+  --mocha-teal: #94e2d5;
+  --mocha-sky: #89dceb;
+  --mocha-sapphire: #74c7ec;
+  --mocha-blue: #89b4fa;
+  --mocha-lavender: #b4befe;
+  --mocha-text: #cdd6f4;
+  --mocha-subtext1: #bac2de;
+  --mocha-subtext0: #a6adc8;
+  --mocha-overlay2: #9399b2;
+  --mocha-overlay1: #7f849c;
+  --mocha-overlay0: #6c7086;
+  --mocha-surface2: #585b70;
+  --mocha-surface1: #45475a;
+  --mocha-surface0: #313244;
+  --mocha-base: #1e1e2e;
+  --mocha-mantle: #181825;
+  --mocha-crust: #11111b;
+
+  /* Catppuccin Latte Theme (Light) */
+  --latte-rosewater: #dc8a78;
+  --latte-flamingo: #dd7878;
+  --latte-pink: #ea76cb;
+  --latte-mauve: #8839ef;
+  --latte-red: #d20f39;
+  --latte-maroon: #e64553;
+  --latte-peach: #fe640b;
+  --latte-yellow: #df8e1d;
+  --latte-green: #40a02b;
+  --latte-teal: #179299;
+  --latte-sky: #04a5e5;
+  --latte-sapphire: #209fb5;
+  --latte-blue: #1e66f5;
+  --latte-lavender: #7287fd;
+  --latte-text: #4c4f69;
+  --latte-subtext1: #5c5f77;
+  --latte-subtext0: #6c6f85;
+  --latte-overlay2: #7c7f93;
+  --latte-overlay1: #8c8fa1;
+  --latte-overlay0: #9ca0b0;
+  --latte-surface2: #acb0be;
+  --latte-surface1: #bcc0cc;
+  --latte-surface0: #ccd0da;
+  --latte-base: #eff1f5;
+  --latte-mantle: #e6e9ef;
+  --latte-crust: #dce0e8;
+
+  /* Initialize with dark theme by default */
+  --bg-primary: var(--mocha-base);
+  --bg-secondary: var(--mocha-mantle);
+  --bg-tertiary: var(--mocha-crust);
+  --bg-panel: var(--mocha-surface0);
+  --bg-panel-header: var(--mocha-surface1);
+  --bg-code: var(--mocha-surface0);
+
+  --text-primary: var(--mocha-text);
+  --text-secondary: var(--mocha-subtext1);
+  --text-muted: var(--mocha-subtext0);
+  --text-bright: var(--mocha-rosewater);
+
+  --border-color: var(--mocha-surface1);
+  --border-highlight: var(--mocha-lavender);
+
+  --accent-primary: var(--mocha-mauve);
+  --accent-secondary: var(--mocha-pink);
+  --accent-tertiary: var(--mocha-blue);
+  --accent-success: var(--mocha-green);
+  --accent-warning: var(--mocha-yellow);
+  --accent-danger: var(--mocha-red);
+  --accent-info: var(--mocha-teal);
+
+  --terminal-prompt: var(--mocha-green);
+  --terminal-command: var(--mocha-text);
+  --terminal-output: var(--mocha-subtext1);
+
+  /* Terminal window colors */
+  --term-red: var(--mocha-red);
+  --term-yellow: var(--mocha-yellow);
+  --term-green: var(--mocha-green);
+  --term-header: var(--mocha-surface1);
+}
+
+/* Light theme class for use with toggle */
+.light-theme {
+  --bg-primary: var(--latte-base);
+  --bg-secondary: var(--latte-mantle);
+  --bg-tertiary: var(--latte-crust);
+  --bg-panel: var(--latte-surface0);
+  --bg-panel-header: var(--latte-surface1);
+  --bg-code: var(--latte-surface0);
+
+  --text-primary: var(--latte-text);
+  --text-secondary: var(--latte-subtext1);
+  --text-muted: var(--latte-subtext0);
+  --text-bright: var(--latte-rosewater);
+
+  --border-color: var(--latte-surface1);
+  --border-highlight: var(--latte-lavender);
+
+  --accent-primary: var(--latte-mauve);
+  --accent-secondary: var(--latte-pink);
+  --accent-tertiary: var(--latte-blue);
+  --accent-success: var(--latte-green);
+  --accent-warning: var(--latte-yellow);
+  --accent-danger: var(--latte-red);
+  --accent-info: var(--latte-teal);
+
+  --terminal-prompt: var(--latte-green);
+  --terminal-command: var(--latte-text);
+  --terminal-output: var(--latte-subtext1);
+
+  /* Terminal window colors */
+  --term-red: var(--latte-red);
+  --term-yellow: var(--latte-yellow);
+  --term-green: var(--latte-green);
+  --term-header: var(--latte-surface1);
+}
+
+/* System preference detection */
+@media (prefers-color-scheme: light) {
+  :root:not(.dark-theme-preferred) {
+    --bg-primary: var(--latte-base);
+    --bg-secondary: var(--latte-mantle);
+    --bg-tertiary: var(--latte-crust);
+    --bg-panel: var(--latte-surface0);
+    --bg-panel-header: var(--latte-surface1);
+    --bg-code: var(--latte-surface0);
+
+    --text-primary: var(--latte-text);
+    --text-secondary: var(--latte-subtext1);
+    --text-muted: var(--latte-subtext0);
+    --text-bright: var(--latte-rosewater);
+
+    --border-color: var(--latte-surface1);
+    --border-highlight: var(--latte-lavender);
+
+    --accent-primary: var(--latte-mauve);
+    --accent-secondary: var(--latte-pink);
+    --accent-tertiary: var(--latte-blue);
+    --accent-success: var(--latte-green);
+    --accent-warning: var(--latte-yellow);
+    --accent-danger: var(--latte-red);
+    --accent-info: var(--latte-teal);
+
+    --terminal-prompt: var(--latte-green);
+    --terminal-command: var(--latte-text);
+    --terminal-output: var(--latte-subtext1);
+
+    /* Terminal window colors */
+    --term-red: var(--latte-red);
+    --term-yellow: var(--latte-yellow);
+    --term-green: var(--latte-green);
+    --term-header: var(--latte-surface1);
+  }
+}
