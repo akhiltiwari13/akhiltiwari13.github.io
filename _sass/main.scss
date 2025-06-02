@@ -1,7 +1,5 @@
 /* _sass/main.scss */
-
-@import "variables";
-@import "terminal";
+@use "variables" as *;
 
 /* Base Styles */
 * {

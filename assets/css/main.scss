@@ -1,7 +1,7 @@
 ---
-# Front matter is required for Jekyll to process SCSS files
+# Only the front matter
 ---
 
-@import "variables";
-@import "terminal";
-@import "main";
+@use "variables" as *;
+@use "terminal" as *;
+@use "main" as *;
