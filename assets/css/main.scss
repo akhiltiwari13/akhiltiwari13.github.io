@@ -1,7 +1,3 @@
----
-# Only the front matter
----
-
-@use "variables" as *;
-@use "terminal" as *;
-@use "main" as *;
+@use "../_sass/variables" as *;
+@use "../_sass/terminal" as *;
+@use "../_sass_main" as *;
