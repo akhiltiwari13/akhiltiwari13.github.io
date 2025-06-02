@@ -17,14 +17,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-title: Akhil Tiwari | HFT & Trading-Systems' Engineer
-email: akhiltiwari.13@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  High-frequency trading systems' engineer specialiaing in low-latency C++ implementations, exchange connectivity, and performance-critical trading infrastructure.
+author:
+  name: Akhil Tiwari
+  email: akhiltiwari.13@gmail.com  # Add this line
+  bio: >-
+    Trading systems engineer with 10+ years of expertise in HFT,
+    low-latency infrastructure, and distributed platforms.
+  github: akhiltiwari13
+  linkedin: akhiltiwari-13
+# title: Akhil Tiwari | HFT & Trading-Systems' Engineer
+# email: akhiltiwari.13@gmail.com
+# description: >- # this means to ignore newlines until "baseurl:"
+#   High-frequency trading systems' engineer specialiaing in low-latency C++ implementations, exchange connectivity, and performance-critical trading infrastructure.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://akhiltiwari13.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  akhiltiwari13
+# github_username:  akhiltiwari13
 
 # Build settings
 theme: minima

@@ -1,8 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
 
 # Akhil Tiwari
@@ -25,7 +22,8 @@ Built a complete trading platform achieving consistent sub-microsecond latencies
 #### Exchange Gateway Optimization
 Reduced median latency from 45μs to 27μs for smart order routing across multiple exchanges including Bovespa, BMV, and TSX.
 
-### Technical Stack---
+### Technical Stack
+
 Languages: C++20, Python, Rust
 Tools: GCC 13.1, Clang, CMake, Conan 2.0
 Profiling: Tracy, libpcap++, Valgrind
