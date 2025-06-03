@@ -34,7 +34,7 @@ url: "https://akhiltiwari13.github.io" # the base hostname & protocol for your s
 # github_username:  akhiltiwari13
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -70,6 +70,10 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Custom variables
 author:

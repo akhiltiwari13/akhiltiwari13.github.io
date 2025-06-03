@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       body.classList.remove('light-theme');
       localStorage.setItem('theme', 'dark');
     } else {
-      body.classList.add('light-theme');
+      body.classList.toggle('light-theme');
       localStorage.setItem('theme', 'light');
     }
   };
